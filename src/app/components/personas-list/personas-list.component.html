@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Sexo</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let persona of personas">
+        <th scope="col">{{persona.nombre}}</th>
+        <th scope="col">{{persona.edad}}</th>
+        <th scope="col">{{persona.sexo}}</th>
+        <th scope="col"> <button class="btn btn-danger" (click)="deletePersona(persona)">borrar</button></th>
+      </tr>
+    </tbody>
+  </table>
+</div>

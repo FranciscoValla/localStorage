@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-1">
+      <form (submit)="addPersona(newNombre,newEdad, newSexo)">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" #newNombre>
+        </div>
+        <div class="mb-3">
+          <label for="edad" class="form-label">Edad</label>
+          <input type="number" class="form-control" id="edad" #newEdad>
+        </div>
+        <label for="exampleDataList" class="form-label">Sexo</label>
+        <input class="form-control" list="opciones" id="exampleDataList" #newSexo>
+        <datalist id="opciones">
+          <option value="Mujer">
+          <option value="Hombre">
+        </datalist>
+        <button type="submit" class="btn btn-primary px-6 my-3">Guardar</button>
+      </form>
+    </div>
+  </div>
+</div>
